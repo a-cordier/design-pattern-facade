@@ -8,11 +8,13 @@ public class MessagingFacade {
 	private FacebookPost facebookPost;
 	private TwitterPost twitterPost;
 	private GooglePlusPost googlePlusPost;
+	private PlainOldMailer plainOldMailer;
 	
 	public MessagingFacade() {
 		this.facebookPost = new FacebookPost();
 		this.twitterPost = new TwitterPost();
 		this.googlePlusPost = new GooglePlusPost();
+		this.plainOldMailer = new PlainOldMailer();
 	}
 	
 	/* 
@@ -26,6 +28,7 @@ public class MessagingFacade {
 			this.facebookPost.send();
 			this.twitterPost.send();
 			this.googlePlusPost.send();
+			this.plainOldMailer.sendToMailingList();
 			// COMMIT
 		} catch (Exception e) {
 			// ROLLBACK
