@@ -1,0 +1,11 @@
+### facade pattern
+
+#### A structural pattern
+
+Provide a unified, coarse grained interface to ease the manipulation of set of services in a subsystem. Facade Pattern defines a higher-level interface that makes the subsystem easier to use. Moreover, this additional layer can be a great help when comes the need to merge 	
+a patchwork of variegated services in a single transaction.
+
+Source code stems from the following UML diagram:
+
+![alt text](design-pattern-facade.png "Design Pattern Facade ")
+
